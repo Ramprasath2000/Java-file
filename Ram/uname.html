@@ -1,0 +1,35 @@
+<HTML>
+<head>
+<title>Validation</title>
+<script>
+function chk()
+{
+var usrname=document.getElementById("username").value;
+if(usrname.length<8)
+{
+alert("Should be greater than 8 character");
+document.getElementById("username").value='';
+document.getElementById("username").focus();
+}
+
+
+}
+
+</script>
+</head>
+<body>
+<br>
+<br>
+<form id="name">
+<label>Username</label>
+<input type="text" id="username" onfocusout="chk()">
+<br><br>
+<label>Password</label>
+<input type="password" />
+<br><br>
+<input type="button" value="Submit" />
+<a href="samplepage.html">sample  </a>
+</form>
+
+</body>
+</HTML>

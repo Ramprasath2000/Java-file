@@ -1,0 +1,33 @@
+<html>
+<head>
+<script>
+function ran1()
+{
+var lbl1=Math.floor(Math.random()*10);
+
+var lbl2=Math.floor(Math.random()*10);
+/*if(lbl1 == lbl2)
+{
+lbl2=Math.random();
+}
+else
+{
+document.getElementById("l1").value=lbl11;
+document.getElementById("l2").value=lbl2;
+}*/
+document.getElementById("l1").innerhtml=lbl11;
+document.getElementById("l2").innerhtml=lbl2;
+}
+
+</script>
+</head>
+<body>
+<form name="RandomNumber">
+<label id="l1">value1</label>
+<label id="l2">value2</label>
+<button onclick="ran1()">random</button>
+</form>
+</body>
+
+
+</html>
